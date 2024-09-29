@@ -1,0 +1,161 @@
+/* Reset default margins and paddings, set box-sizing model */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "SUSE", sans-serif; /* Use custom font */
+}
+
+/* Center body content */
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(119, 145, 150, 0.598);
+    height: 100%;
+}
+
+/* Style for main container */
+.mainContainer {
+    margin-top: 50px;
+    width: 600px; /* Fixed width */
+    background-color: #ffffff; /* White background */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0px 0px 10px 0px rgba(98, 97, 97, 0.847); /* Shadow effect */
+}
+
+/* Heading style */
+h1 {
+    margin-left: 7px;
+    text-align: center;
+    padding: 20px; /* Space around heading */
+    font-size: 30px; /* Font size for heading */
+    font-weight: 500;
+}
+
+/* Icon in the heading */
+h1 img {
+    height: 21px; /* Icon height */
+    margin-right: 7px; /* Space between icon and text */
+}
+
+/* Remove bullet points from list items */
+li {
+    list-style-type: none;
+}
+
+/* Input area style for adding tasks */
+.textInput {
+    width: 90%; /* Occupy 90% of the parent width */
+    display: flex; /* Flexbox for alignment */
+    justify-content: center;
+    padding: 10px 0px; /* Vertical padding */
+    gap: 2%; /* Space between input and button */
+    margin: auto; /* Center horizontally */
+}
+
+/* Style for input field */
+.textInput input {
+    width: 80%; /* Input width */
+    border-radius: 5px; /* Rounded corners */
+    height: 50px; /* Height of the input */
+    padding: 5px; /* Inner padding */
+    outline: none; /* Remove outline */
+    font-size: 18px; /* Font size */
+    background-color: #cbebef79; /* Light blue background */
+    border: none; /* Remove border */
+    text-indent: 5px; /* Indent text */
+}
+
+/* Style for the task list */
+.ulMain {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    margin-bottom: 5px; /* Space below the list */
+}
+
+/* Style for the Add button */
+.textInput button {
+    padding: 1rem; /* Padding inside the button */
+    font-weight: 500; /* Medium font weight */
+    background-color: #2351d2e5; /* Button background color */
+    border: none; /* Remove border */
+    outline: none; /* Remove outline */
+    cursor: pointer; /* Pointer cursor on hover */
+    color: white; /* Button text color */
+    border-radius: 5px; /* Rounded corners */
+}
+
+/* Style for the list container */
+.listContainer {
+    width: 100%; /* Full width */
+    padding: 10px; /* Inner padding */
+}
+
+/* Style for each task item */
+.lists {
+    background-color: rgba(55, 184, 55, 0.224); /* Light green background */
+    padding: 15px 10px; /* Padding inside task item */
+    border-radius: 5px; /* Rounded corners */
+    margin: 10px; /* Space around each task */
+    margin-bottom: 2px; /* Extra space below each task */
+    display: flex; /* Flexbox layout */
+}
+
+/* Flex layout for task item elements */
+.first {
+    display: flex;
+    gap: 7px; /* Space between checkbox and task text */
+    width: 90%; /* Occupy 90% of the task item */
+    margin-right: 1%; /* Space to the right */
+}
+
+/* Task text style */
+.taskData {
+    padding: 0px 12px; /* Inner padding */
+    font-size: 18px; /* Font size */
+    width: 100%; /* Full width */
+}
+
+/* Checkbox container */
+.checkInput {
+    width: 18px; /* Width of the checkbox container */
+    line-height: 18px; /* Align checkbox vertically */
+    display: flex; /* Flexbox for alignment */
+    align-items: center; /* Center checkbox */
+    justify-content: center; /* Center checkbox */
+}
+
+/* Style for the checkbox */
+.checkInput input {
+    background-color: red; /* Background color of checkbox */
+    width: 90%; /* Width of checkbox */
+    height: 90%; /* Height of checkbox */
+}
+
+/* Container for action icons */
+.second {
+    display: flex;
+    flex-direction: row; /* Align icons horizontally */
+    gap: 8px; /* Space between icons */
+    align-items: center; /* Center icons */
+    justify-content: center; /* Center icons */
+    width: 9%; /* Occupy 9% of task item */
+}
+
+/* Font Awesome icon styles */
+.fa-solid {
+    font-size: 20px; /* Font size for icons */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+/* Hover effects for input field */
+#textData:hover {
+    background-color: #a0e7ec2f; /* Change background on hover */
+    box-shadow: inset 0px -5px 5px -5px rgba(0, 0, 0, 0.5); /* Shadow effect */
+}
+
+/* Hover effects for Add button */
+#add:hover {
+    background-color: #3666e8d5; /* Change background on hover */
+}

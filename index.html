@@ -1,0 +1,56 @@
+<!DOCTYPE html> 
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Preconnect to fonts and stylesheets for faster loading -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap" rel="stylesheet">
+    <!-- Link to Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Tasks To-Do</title>
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="/style.css">
+    <!-- Set favicon for the webpage -->
+    <link rel="icon" href="/images/icon_image.png">
+</head>
+
+<body>
+    <div class="mainContainer">
+        <div class="textContainer">
+            <div class="heading">
+                <h1><img src="/images/icon_image.png" alt="icon">Tasks To-Do!</h1>
+            </div>
+            <div class="textInput">
+                <!-- Input field for new tasks -->
+                <input type="text" name="text" id="textData" placeholder="Enter new Task To-Do">
+                <!-- Button to add tasks -->
+                <button name="Add" id="add" value="Add">Add</button>
+            </div>
+        </div>
+        <div class="listContainer">
+            <ul class="ulMain" id="taskTodo">
+                <!-- Task list will be dynamically generated here -->
+                <!-- Example task item (commented out for now) -->
+                <!-- <li class="lists"> -->
+                <!-- <div class="first"> -->
+                <!-- <div class="checkInput"> <input type="checkbox" id="checkBox"></div> -->
+                <!-- <div class="taskData"> This is the content </div> -->
+                <!-- </div> -->
+                <!-- <div class="second"> -->
+                <!-- <i class="fa-solid fa-pen-to-square" style="color: rgb(0, 175, 12);"></i> -->
+                <!-- <i class="fa-solid fa-trash" style="color: rgba(229, 13, 13, 0.826)"></i> -->
+                <!-- </div> -->
+                <!-- </li> -->
+            </ul>
+        </div>
+    </div>
+    <!-- Link to external JavaScript file -->
+    <script src="/script.js"></script>
+</body>
+
+</html>
